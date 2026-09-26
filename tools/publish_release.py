@@ -30,7 +30,7 @@ NOTES = """## 下载
 
 | 文件 | 说明 |
 | --- | --- |
-| `ExcelFinder-U盘版.zip` | **完整便携包**，解压后双击 `ExcelFinder.exe` 即可使用 |
+| `ExcelFinder-portable.zip` | **完整便携包**，解压后双击 `ExcelFinder.exe` 即可使用 |
 
 解压后目录里已经包含使用说明（`先读我.txt`），无需安装 Python、Office 或任何运行库。
 
@@ -127,6 +127,8 @@ def main() -> int:
     ap.add_argument("--zip", required=True, help="要上传的 zip 路径")
     ap.add_argument("--tag", default="v1.0.0")
     ap.add_argument("--name", default="ExcelFinder v1.0.0 — U盘便携版")
+    ap.add_argument("--asset-name", default="ExcelFinder-portable.zip",
+                    help="附件名（请用 ASCII，非 ASCII 会被上传接口丢弃字符）")
     args = ap.parse_args()
 
     token = os.environ.get("GITHUB_TOKEN", "").strip()
@@ -165,9 +167,17 @@ def main() -> int:
 
     # skip re-uploading an asset that is already there
     existing = {a["name"]: a for a in rel.get("assets", [])}
-    name = os.path.basename(path)
+    # Non-ASCII asset names get mangled by the upload endpoint (the Chinese
+    # characters were dropped), so publish under a plain ASCII name and keep
+    # the folder's real name inside the archive.
+    name = args.asset_name or "ExcelFinder-portable.zip"
+    for old_name, old in list(existing.items()):
+        if old_name != name:
+            print(f"删除旧附件: {old_name}")
+            api(f"{base}/releases/assets/{old['id']}", token, "DELETE")
+            existing.pop(old_name)
     if name in existing:
-        print(f"资产已存在，先删除旧的上传: {name}")
+        print(f"同名附件已存在，先删除: {name}")
         api(f"{base}/releases/assets/{existing[name]['id']}", token, "DELETE")
 
     print("上传中（35 MB 左右，请稍候）…")
