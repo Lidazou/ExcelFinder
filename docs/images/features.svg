@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560"
+     viewBox="0 0 1000 560" role="img" aria-label="界面与功能一览">
+  <title>界面与功能一览</title>
+  <defs>
+    <linearGradient id="ghero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f6f3c"/>
+      <stop offset="100%" stop-color="#2e8b57"/>
+    </linearGradient>
+    <linearGradient id="gbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2a7fd4"/>
+      <stop offset="100%" stop-color="#1f6f3c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#1f2933" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1000" height="560" rx="0" fill="#f7f9fc"/>
+  <text x="28" y="44" font-size="22" fill="#1f2933" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">界面与功能一览</text>
+  <text x="28" y="70" font-size="13.5" fill="#5c6b7a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">仅示意图，说明各区域的作用</text>
+  <rect x="28" y="92" width="944" height="430" rx="10" fill="#ffffff" stroke="#d5dde5" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="28" y="92" width="944" height="30" rx="10" fill="#e9eef3"/>
+  <rect x="28" y="112" width="944" height="10" rx="0" fill="#e9eef3"/>
+  <text x="42" y="112" font-size="12" fill="#5c6b7a" font-family="'JetBrains Mono','Cascadia Mono',Consolas,'Courier New',monospace">ExcelFinder v1.0.0 — 本地 Excel 极速检索  [U盘便携版]</text>
+  <circle cx="952" cy="107" r="5" fill="#c8d2dc"/>
+  <rect x="42" y="134" width="916" height="66" rx="8" fill="#e8f3ec" stroke="#1f6f3c" stroke-width="1.2"/>
+  <text x="54" y="154" font-size="13" fill="#1f6f3c" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">① 目标目录与索引</text>
+  <text x="54" y="176" font-size="12" fill="#5c6b7a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">选择目录 · 重建索引 · 增量更新 · 扫描线程数 · 跳过隐藏文件</text>
+  <text x="54" y="193" font-size="11.5" fill="#8899a6" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">索引统计：文件数 / 数据量 / 扫描耗时 / 内容索引数</text>
+  <rect x="42" y="208" width="916" height="78" rx="8" fill="#eaf3fd" stroke="#2a7fd4" stroke-width="1.2"/>
+  <text x="54" y="228" font-size="13" fill="#2a7fd4" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">② 关键词检索</text>
+  <text x="54" y="250" font-size="12" fill="#5c6b7a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">关键词 · 搜索 · 清空 · 刷新列表(F5) · 建立内容索引 · 导出 CSV</text>
+  <text x="54" y="270" font-size="12" fill="#5c6b7a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">文件名需命中 / 内容需命中 · 匹配方式（包含·前缀·全等·通配符·正则）· 格式筛选</text>
+  <rect x="42" y="294" width="916" height="118" rx="8" fill="#ffffff" stroke="#d5dde5" stroke-width="1.2"/>
+  <text x="54" y="314" font-size="11" fill="#5c6b7a" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">文件名</text>
+  <text x="285.92" y="314" font-size="11" fill="#5c6b7a" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">所在目录</text>
+  <text x="446.48" y="314" font-size="11" fill="#5c6b7a" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">大小</text>
+  <text x="526.76" y="314" font-size="11" fill="#5c6b7a" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">修改时间</text>
+  <text x="642.72" y="314" font-size="11" fill="#5c6b7a" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">命中位置</text>
+  <text x="785.44" y="314" font-size="11" fill="#5c6b7a" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">命中内容片段</text>
+  <line x1="48" y1="322" x2="952" y2="322" stroke="#d5dde5" stroke-width="1"/>
+  <text x="54" y="344" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">2021产品路线图_000055.xlsx</text>
+  <text x="285.92" y="344" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">…\批次000</text>
+  <text x="446.48" y="344" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">12 KB</text>
+  <text x="526.76" y="344" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">2026-09-21 20:31</text>
+  <text x="642.72" y="344" font-size="11" fill="#1f6f3c" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">西北汇总!D16 等3处</text>
+  <text x="54" y="366" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">2023年华东销售部年度预算_740.xlsx</text>
+  <text x="285.92" y="366" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">…\财务部</text>
+  <text x="446.48" y="366" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">18 KB</text>
+  <text x="526.76" y="366" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">2026-09-20 09:12</text>
+  <text x="642.72" y="366" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">文件名</text>
+  <text x="54" y="388" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">2022年东北客户名单_1208.csv</text>
+  <text x="285.92" y="388" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">…\市场部</text>
+  <text x="446.48" y="388" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">9 KB</text>
+  <text x="526.76" y="388" font-size="11" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">2026-09-19 15:44</text>
+  <text x="642.72" y="388" font-size="11" fill="#1f6f3c" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">内容</text>
+  <rect x="42" y="420" width="916" height="40" rx="8" fill="#fdf3e3" stroke="#e08a1a" stroke-width="1.2"/>
+  <text x="54" y="437" font-size="12" fill="#e08a1a" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">预览面板（可折叠）</text>
+  <text x="54" y="453" font-size="11.5" fill="#5c6b7a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">1. 工作表「西北汇总」 D16 = 张伟    该行: 15 | 2023-09-10 | 客服部 | 张伟 | …</text>
+  <rect x="42" y="470" width="916" height="24" rx="6" fill="#eef3f7" stroke="#d5dde5" stroke-width="1"/>
+  <text x="54" y="486" font-size="10.5" fill="#1f2933" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">☑ 显示预览面板</text>
+  <text x="158" y="486" font-size="10.5" fill="#5c6b7a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">打开方式:</text>
+  <rect x="210" y="473" width="158" height="18" rx="4" fill="#ffffff" stroke="#2a7fd4" stroke-width="1"/>
+  <text x="218" y="486" font-size="10.5" fill="#2a7fd4" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">自动（Office 优先）</text>
+  <text x="380" y="486" font-size="10.5" fill="#8899a6" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">双击＝打开并跳到命中单元格</text>
+  <rect x="648" y="474" width="130" height="16" rx="8" fill="#dde5ec"/>
+  <rect x="648" y="474" width="96" height="16" rx="8" fill="url(#gbar)"/>
+  <text x="786" y="486" font-size="10.5" fill="#1f6f3c" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">解析内容 74%</text>
+  <text x="54" y="514" font-size="10.5" fill="#5c6b7a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">命中 223 个文件 · 查询耗时 2.1 ms · 索引 3,404 个文件  ·  刷新完成：新增 1 个</text>
+  <text x="946" y="514" font-size="10.5" fill="#8899a6" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">U盘便携模式（配置存于程序目录）</text>
+  <text x="28" y="544" font-size="12.5" fill="#5c6b7a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">「命中位置」列直接给出 工作表!单元格；双击即跳转，不需在一千行里自己找。</text>
+</svg>

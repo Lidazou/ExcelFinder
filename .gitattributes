@@ -1,0 +1,18 @@
+# Normalize line endings so the repo behaves the same on every machine.
+# Windows users get CRLF in the working tree; the repository stores LF.
+* text=auto eol=lf
+
+# Windows-specific files keep CRLF in the working tree.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary assets must never be re-encoded.
+*.exe binary
+*.ico binary
+*.png binary
+*.jpg binary
+*.zip binary
+
+# Generated SVG diagrams are text, but diffing them is rarely useful.
+docs/images/*.svg text eol=lf

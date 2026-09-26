@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430"
+     viewBox="0 0 1000 430" role="img" aria-label="性能对比">
+  <title>性能对比</title>
+  <defs>
+    <linearGradient id="ghero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f6f3c"/>
+      <stop offset="100%" stop-color="#2e8b57"/>
+    </linearGradient>
+    <linearGradient id="gbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2a7fd4"/>
+      <stop offset="100%" stop-color="#1f6f3c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#1f2933" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1000" height="430" rx="0" fill="#f7f9fc"/>
+  <text x="28" y="44" font-size="22" fill="#1f2933" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">实测性能对比</text>
+  <text x="28" y="70" font-size="13.5" fill="#5c6b7a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">6 万个表格文件 / 424 MB / 同一台电脑 / 关键词「预算」</text>
+  <rect x="28" y="104" width="950" height="54" rx="9" fill="#ffffff" stroke="#d5dde5" stroke-width="1"/>
+  <text x="46" y="128" font-size="14" fill="#1f2933" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">PowerShell Get-ChildItem -Recurse</text>
+  <text x="46" y="146" font-size="12.5" fill="#5c6b7a" font-family="'JetBrains Mono','Cascadia Mono',Consolas,'Courier New',monospace">2,388 ms</text>
+  <rect x="330" y="116" width="550.0" height="30" rx="6" fill="#5c6b7a"/>
+  <text x="892.0" y="136" font-size="15" fill="#5c6b7a" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">1×</text>
+  <rect x="28" y="172" width="950" height="54" rx="9" fill="#ffffff" stroke="#d5dde5" stroke-width="1"/>
+  <text x="46" y="196" font-size="14" fill="#1f2933" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">CMD where /r（系统自带）</text>
+  <text x="46" y="214" font-size="12.5" fill="#5c6b7a" font-family="'JetBrains Mono','Cascadia Mono',Consolas,'Courier New',monospace">919 ms</text>
+  <rect x="330" y="184" width="211.66247906197657" height="30" rx="6" fill="#5c6b7a"/>
+  <text x="553.6624790619766" y="204" font-size="15" fill="#5c6b7a" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">2.6×</text>
+  <rect x="28" y="240" width="950" height="54" rx="9" fill="#ffffff" stroke="#d5dde5" stroke-width="1"/>
+  <text x="46" y="264" font-size="14" fill="#1f2933" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">ExcelFinder 首次扫描目录</text>
+  <text x="46" y="282" font-size="12.5" fill="#5c6b7a" font-family="'JetBrains Mono','Cascadia Mono',Consolas,'Courier New',monospace">468 ms</text>
+  <rect x="330" y="252" width="107.78894472361809" height="30" rx="6" fill="#2a7fd4"/>
+  <text x="449.7889447236181" y="272" font-size="15" fill="#2a7fd4" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">5.1×</text>
+  <rect x="28" y="308" width="950" height="54" rx="9" fill="#ffffff" stroke="#d5dde5" stroke-width="1"/>
+  <text x="46" y="332" font-size="14" fill="#1f2933" font-weight="600" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">ExcelFinder 已建索引检索</text>
+  <text x="46" y="350" font-size="12.5" fill="#5c6b7a" font-family="'JetBrains Mono','Cascadia Mono',Consolas,'Courier New',monospace">42 ms</text>
+  <rect x="330" y="320" width="9.673366834170855" height="30" rx="6" fill="#1f6f3c"/>
+  <text x="351.67336683417085" y="340" font-size="15" fill="#1f6f3c" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">57×</text>
+  <text x="28" y="396" font-size="12.5" fill="#5c6b7a" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei UI','Microsoft YaHei',Roboto,'Helvetica Neue',Arial,sans-serif">内容检索差距更大：Windows 需装 Office 并逐个调用 IFilter，本项目直接解析 XML，约 270 文件/秒且结果缓存。</text>
+</svg>
